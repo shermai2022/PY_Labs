@@ -1,13 +1,14 @@
-def triangle_perimeter(a = 7, b = 2, c = 8):
-    peri = a + b + c
-    print(peri)
-    return
-    
-    
-    
-def triangle_area(a = 7, b = 2, c = 8):
-    S = (a + b + c)/2
-    A = (S - a) * (S - b) * (S - c) * S
-    A = A**0.5
+import math
+__a = 7
+__b = 2
+__c = 8
+def triangle_perimeter(a=__a,b=__b,c=__c):
+    P = a + b + c
+    print(P)
+triangle_perimeter()
+def triangle_area(a=__a,b=__b,c=__c):
+    p = (__a+__b+__c)/2
+    A = math.sqrt(p*(p-a)*(p-b)*(p-c))
     print(A)
-    return
+triangle_area()
+
