@@ -1,8 +1,9 @@
-def square_perimeter(a = 5):
-    peri = a*4
-    return peri
+__a = 15
+def  square_perimeter(a=__a):
+    P = a*4
+    print(P)
+def square_area(a=__a):
+    S = a^2 
+    print(S)
     
     
-def square_area(a = 5):
-    area = a**2
-    return area
