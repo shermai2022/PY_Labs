@@ -1,11 +1,8 @@
-pi = 3.1415
-
-def circle_area(default_radius = 5):
-    A = (pi *  default_radius ** 2)
+import math
+__default_radius = 5
+def circle_perimeter(radius=__default_radius):
+    C = 2*math.pi*radius
+    print(C)
+def circle_area(radius=__default_radius):
+    A = math.pi*pow(radius, 2)
     print(A)
-    return
-    
-def circle_perimeter(default_radius = 5):
-    circum = 2 * pi * default_radius
-    print(circum)
-    return
